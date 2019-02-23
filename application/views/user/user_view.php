@@ -16,15 +16,15 @@
                 echo "<tr>";
 
                 echo "<th>";
-                echo $user[0]->id;
+                echo $user->id;
                 echo "</th>";
 
                 echo "<th>";
-                echo $user[0]->username;
+                echo $user->username;
                 echo "</th>";
 
                 echo "<th>";
-                echo $user[0]->company;
+                echo $user->company;
                 echo "</th>";
 
                 echo "</tr>";
@@ -57,6 +57,6 @@
 <pre>
 <?php
     // print_r($userArray);
-    // print_r($user[0]);
+    // print_r($user);
 ?>
 </pre>

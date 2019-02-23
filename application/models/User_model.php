@@ -10,9 +10,11 @@
 
         function get_user() {
             $this->load->database();
-            $query = $this->db->query('SELECT * FROM user WHERE id=1');
+            // $query = $this->db->query('SELECT * FROM user WHERE id=1');
+            // $query = $this->db->where('id', 1)->get('user', 1);
+            $query = $this->db->get_where('user', array('id'=>1),1);
             
-            return $query->result();
+            return $query->row();
         }
 
     }
