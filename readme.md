@@ -1,5 +1,19 @@
 # codeigniter
 
+## Nginx remove index.php
+
+```shell
+    location / {
+            # Check if a file or directory index file exists, else route it to index.php.
+            try_files $uri $uri/ /index.php;
+    }
+
+    location ~* \.php$ {
+            fastcgi_pass localhost:9000;
+            include fastcgi.conf;
+    }
+```
+
 ## Controllers
 
 ```php
