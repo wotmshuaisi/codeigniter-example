@@ -17,6 +17,12 @@
             return $query->row();
         }
 
+        function create_user($data) {
+            $this->load->database();
+            $q = $this->db->insert('user', $data);
+            return $q;
+        }
+
     }
 
 ?>

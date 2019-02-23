@@ -42,3 +42,10 @@
 
 ?>
 ```
+
+## Libraries && Helper
+
+libraries is classes, helper is a set of functions.
+libraries used in object oriented context, helper is more suitable to be used within the views also you could them in Models, Views..
+
+> [codeigniter libraries](https://www.codeigniter.com/user_guide/libraries/index.html?highlight=library)
