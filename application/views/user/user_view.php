@@ -8,15 +8,31 @@
 <body>
     <table border=1>
         <tr>
-            <th>No.</th>
+            <th>ID.</th>
             <th>Username</th>
             <th>Company</th>
         </tr>
         <tr>
-            <td>1</td>
-            <td><?= $userArray['username'] ?></td>
-            <td><?= $userArray['company'] ?></td>
-        </tr>
+            <?php
+                foreach ($userArray as $key => $value) {
+                    echo "<tr>";
+
+                    echo "<td>";
+                    echo $value['id'];
+                    echo "</td>";
+
+                    echo "<td>";
+                    echo $value['username'];
+                    echo "</td>";
+
+                    echo "<td>";
+                    echo $value['company'];
+                    echo "</td>";
+
+                    echo "</tr>";
+                }
+            ?>
+        </td>
     </table>
 </body>
 </html>
