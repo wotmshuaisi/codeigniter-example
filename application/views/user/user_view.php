@@ -12,6 +12,23 @@
             <th>Username</th>
             <th>Company</th>
         </tr>
+        <?php
+                echo "<tr>";
+
+                echo "<th>";
+                echo $user[0]->id;
+                echo "</th>";
+
+                echo "<th>";
+                echo $user[0]->username;
+                echo "</th>";
+
+                echo "<th>";
+                echo $user[0]->company;
+                echo "</th>";
+
+                echo "</tr>";
+        ?>
         <tr>
             <?php
                 foreach ($userArray as $key => $value) {
@@ -39,6 +56,7 @@
 
 <pre>
 <?php
-    print_r($userArray);
+    // print_r($userArray);
+    // print_r($user[0]);
 ?>
 </pre>
