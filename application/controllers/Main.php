@@ -28,7 +28,12 @@
             return;
         }
 
-        public function test
+        public function test()
+        {
+            $this->load->model('authentication', 'auth');
+            $name = $this->auth->userData();
+            echo $name;
+        }
 
     }
     
