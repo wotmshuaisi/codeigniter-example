@@ -5,9 +5,13 @@
     {
         public function index()
         {
-            echo '<pre>';
+            $this->load->helper('tag_helper');
+            
+            // echo '<pre>';
+            pre_start();
             var_dump($this->input->request_headers());
-            echo '</pre>';
+            pre_end();
+            // echo '</pre>';
             return;
         }
 
