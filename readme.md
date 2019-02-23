@@ -48,4 +48,19 @@
 libraries is classes, helper is a set of functions.
 libraries used in object oriented context, helper is more suitable to be used within the views also you could them in Models, Views..
 
+```php
+// for libraries
+$this->load->library('xxxx');
+$this->xxxx->qweqeq();
+// for helper
+$this->load->helper('xxxx');
+aaaa();
+```
+
 > [codeigniter libraries](https://www.codeigniter.com/user_guide/libraries/index.html?highlight=library)
+
+## Autoload
+
+autoload some libraries / database / helpers
+
+file: application/config/autoload.php

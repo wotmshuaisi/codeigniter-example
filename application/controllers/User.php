@@ -19,7 +19,6 @@
 
         function submit() {
             $this->load->model('user_model', 'um');
-            $this->load->helper('url');
             $this->load->library('form_validation');
             $this->form_validation->set_rules('username', 'Username', 'required');
             $this->form_validation->set_rules('company', 'Company', 'required', 
